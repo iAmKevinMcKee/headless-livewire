@@ -4,11 +4,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/videos/{video}', function () {
     $video = App\Video::findOrFail(request()->video);
-    $view = App\View::firstOrCreate([
+    $videoView = App\VideoView::firstOrCreate([
         'user_id' => request()->user()->id,
         'video_id' => $video->id,
     ]);
-    return view('video', ['video' => $video, 'view' => $view]);
+    return view('video', [
+        'video' => $video, 'videoView' => $videoView
+    ]);
 });
 
 

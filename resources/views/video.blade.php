@@ -10,7 +10,7 @@
     <div>Record when the user completes the video</div>
     <br/>
     Video Model: {{$video}}<br/>
-    View Model: {{$view}}<br/>
+    VideoView Model: {{$videoView}}<br/>
     <br/>
     <div id="our-video"></div>
 
