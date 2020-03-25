@@ -20,6 +20,29 @@ Route::get('/videos/{video}', function () {
 
 
 
+/*** Benefits of Headless Livewire for Internal API
+ * Don't need to install Passport or Sanctum
+ * Write less code
+ * Access to dd() in API calls
+ * Access to full functionality of Livewire
+***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Auth::routes();
