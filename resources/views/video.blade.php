@@ -12,23 +12,8 @@
     Video Model: {{$video}}<br/>
     View Model: {{$view}}<br/><br/>
     <div id="our-video"></div>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-        var options = {
-            id: {{$video->vimeo_id}},
-            width: 640,
-            loop: true
-        };
-
-        var player = new Vimeo.Player('our-video', options);
-
-        player.setVolume(0);
-
-        player.on('play', function() {
-            console.log('played the video!');
-        });
-    </script>
 </div>
 </body>
 </html>
