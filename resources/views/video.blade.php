@@ -5,6 +5,12 @@
 </head>
 <body>
 <div style="width: 100%; text-align: center; padding-top: 90px; font-size: 20px;">
+    <h2>Let's Build a Screencasts Website</h2><br/>
+    <div>Track where the user is in the video</div>
+    <div>Record when the user completes the video</div>
+    <br/>
+    Video Model: {{$video}}<br/>
+    View Model: {{$view}}<br/><br/>
     <div id="our-video"></div>
 
     <script src="https://player.vimeo.com/api/player.js"></script>
