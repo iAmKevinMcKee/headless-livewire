@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return redirect()->to('/login');
+});
+
 Route::get('/videos/{video}', function () {
     $video = App\Video::findOrFail(request()->video);
     $videoView = App\VideoView::firstOrCreate([
